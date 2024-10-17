@@ -27,8 +27,8 @@
 
 #include "./JsonHelper.h"
 
-#include "./CppSDK/SDK/Engine_classes.hpp"
-#include "./CppSDK/SDK/Puerts_classes.hpp"
+#include "./SDK/Engine_classes.hpp"
+
 //#include "CppSDK/SDK/KuroRenderingRuntimeBPPlugin_classes.hpp"
 
 
@@ -43,6 +43,6 @@ typedef uintptr_t PTR;
 void Cheese();
 void initchair();
 //void ReloadScripts();
-SDK::UPuertsSetting* SafeGetDefaultObj();
+
 
 

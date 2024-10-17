@@ -3,18 +3,7 @@
 
 namespace Scripts
 {
-    std::string eval(std::string script)
-    {
-        auto source = Util::FString((char*)script.c_str());
-        auto out = SDK::UWorldFunctionLibrary_C::EvalScript(source, sdk::World);
-        return out.ToString();
-    }
-
-     bool isMapOpen() 
-     {
-        if (sdk::World == nullptr) return false;
-        return eval("require('../Ui/UiManager').UiManager.IsViewOpen('WorldMapView')") == "true";
-     }
+   
 
     
 }

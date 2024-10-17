@@ -7,7 +7,7 @@
 #include "Vector.h"
 #include "imgui/imgui.h"
 #include <vector>
-#include "CppSDK/SDK/Engine_classes.hpp"
+#include "SDK/Engine_classes.hpp"
 
 namespace ESP
 {

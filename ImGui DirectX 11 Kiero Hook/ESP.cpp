@@ -20,7 +20,7 @@ namespace ESP
 
         SDK::APlayerController* playerController = worldInstance->OwningGameInstance->LocalPlayers[0]->PlayerController;
         playerController->ProjectWorldLocationToScreen(world, &out, true);
-        return { out.X, out.Y };
+        return { static_cast<float>(out.X), static_cast<float>(out.Y)};
     }
 
     SDK::FVector Bounds::p_min() const {
@@ -32,27 +32,27 @@ namespace ESP
     }
 
     void DrawActor(SDK::AActor* actor, DrawMode drawmode, PointMode pointmode, const std::vector<int>& color, SDK::AActor* PlayerActor) {
-        switch (drawmode) 
-		{
-		case DrawMode::Box:
-		{
-			auto bounds = GetBoundsFromActor(actor);
-			ImVec2 p_min = WorldToScreen(bounds.p_min());
-			ImVec2 p_max = WorldToScreen(bounds.p_max());
-			ImGui::GetBackgroundDrawList()->AddRect(p_min, p_max, ImColor(ColorVecToImVec(color)));
-			std::string actorInfo = std::string(actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(actor->KuroEntityType);
-			ImGui::GetBackgroundDrawList()->AddText(p_min, ImColor(ColorVecToImVec(color)), actorInfo.c_str());
-			break;
-		}
-		case DrawMode::Chams: 
-        {
-			// Implement your Chams drawing logic here
+  //      switch (drawmode) 
+		//{
+		//case DrawMode::Box:
+		//{
+		//	auto bounds = GetBoundsFromActor(actor);
+		//	ImVec2 p_min = WorldToScreen(bounds.p_min());
+		//	ImVec2 p_max = WorldToScreen(bounds.p_max());
+		//	ImGui::GetBackgroundDrawList()->AddRect(p_min, p_max, ImColor(ColorVecToImVec(color)));
+		//	std::string actorInfo = std::string(actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(actor->KuroEntityType);
+		//	ImGui::GetBackgroundDrawList()->AddText(p_min, ImColor(ColorVecToImVec(color)), actorInfo.c_str());
+		//	break;
+		//}
+		//case DrawMode::Chams: 
+  //      {
+		//	// Implement your Chams drawing logic here
 
-			break;
-		}
+		//	break;
+		//}
 
 
-		}
+		//}
         if (pointmode == PointMode::Line)
         {
             auto playerpos = PlayerActor->K2_GetActorLocation();

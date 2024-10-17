@@ -3,13 +3,11 @@
 #include <Windows.h>
 #include <string>
 #include "sdk.h"
-#include "./CppSDK/SDK/WorldFunctionLibrary_classes.hpp"
-#include "./CppSDK/SDK/Engine_classes.hpp"
+#include "./SDK/Engine_classes.hpp"
 
 namespace Scripts
 {
-	std::string eval(std::string script);
-	bool isMapOpen();
+	
 }
 namespace Util
 {

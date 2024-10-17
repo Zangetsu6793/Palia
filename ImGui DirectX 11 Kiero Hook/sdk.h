@@ -9,7 +9,7 @@
 #include <d3d11.h>
 #include <string>
 #include "./JsonHelper.h"
-#include "./CppSDK/SDK/Engine_classes.hpp"
+#include "./SDK/Engine_classes.hpp"
 
 inline bool show_menu = true;
 inline bool show_info = true;

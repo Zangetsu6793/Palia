@@ -12,8 +12,7 @@
 #include <tuple> 
 #include "ESP.h"
 
-#include "CppSDK/SDK/KuroData_classes.hpp"
-#include "CppSDK/SDK/KuroUtility_classes.hpp"
+
 #include "Utils.h"
 
 using namespace ImGui;
@@ -605,130 +604,130 @@ void TeleportUI()
 
 void Esp()
 {
-	if (sdk::World != nullptr && sdk::World->OwningGameInstance != nullptr && sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn != nullptr && sdk::World->PersistentLevel != nullptr && sdk::World->PersistentLevel->Actors[0] != nullptr)
-		if (vars::espEnable)
-		{
-			if (sdk::World) {
-				auto Actors = SDK::UWorld::GetWorld()->PersistentLevel->Actors;
+	//if (sdk::World != nullptr && sdk::World->OwningGameInstance != nullptr && sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn != nullptr && sdk::World->PersistentLevel != nullptr && sdk::World->PersistentLevel->Actors[0] != nullptr)
+	//	if (vars::espEnable)
+	//	{
+	//		if (sdk::World) {
+	//			auto Actors = SDK::UWorld::GetWorld()->PersistentLevel->Actors;
 
-				for (SDK::AActor* Actor : Actors) {
+	//			for (SDK::AActor* Actor : Actors) {
 
-					if (Actor && Actor->IsA(SDK::AActor::StaticClass()))
-					{
+	//				if (Actor && Actor->IsA(SDK::AActor::StaticClass()))
+	//				{
 
-						if (Actor->KuroEntityType == 1) // Skip drawing the player
-							continue;
+	//					if (Actor->KuroEntityType == 1) // Skip drawing the player
+	//						continue;
 
-						std::vector<int> color;
-						bool draw = false;
+	//					std::vector<int> color;
+	//					bool draw = false;
 
-						std::string actorInfo = std::string(Actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(Actor->KuroEntityType);
-						//fprintf(stderr, "Info: %s\n", actorInfo.c_str());
+	//					std::string actorInfo = std::string(Actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(Actor->KuroEntityType);
+	//					//fprintf(stderr, "Info: %s\n", actorInfo.c_str());
 
-						switch (Actor->KuroEntityType) {
-						case 2: // NPC
-							if (vars::espNPC) {
-								color = { (int)(vars::colorNPC[0] * 255), (int)(vars::colorNPC[1] * 255), (int)(vars::colorNPC[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						case 4: // Monster
-							if (vars::espMonster) {
-								color = { (int)(vars::colorMonster[0] * 255), (int)(vars::colorMonster[1] * 255), (int)(vars::colorMonster[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						case 6: // SceneItem
-							if (vars::espSceneItem) {
-								color = { (int)(vars::colorSceneItem[0] * 255), (int)(vars::colorSceneItem[1] * 255), (int)(vars::colorSceneItem[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						case 7: // Customs
-							if (actorInfo.find("Treasure") != std::string::npos && vars::espChests) {
-								// This is a treasure, use a different color
-								color = { (int)(vars::colorChest[0] * 255), (int)(vars::colorChest[1] * 255), (int)(vars::colorChest[2] * 255), 255 };
-								draw = true;
-							}
-							if (actorInfo.find("Teleport") != std::string::npos && vars::espTeleport) {
-								// Handle teleports
-								color = { (int)(vars::colorTeleport[0] * 255), (int)(vars::colorTeleport[1] * 255), (int)(vars::colorTeleport[2] * 255), 255 };
-								draw = true;
-							}
-							if (actorInfo.find("Collect") != std::string::npos && vars::espCollectable) {
-								// Handle collectables
-								color = { (int)(vars::colorCollectable[0] * 255), (int)(vars::colorCollectable[1] * 255), (int)(vars::colorCollectable[2] * 255), 255 };
-								draw = true;
-							}
-							if (vars::espOtherCustoms && actorInfo.find("Treasure") == std::string::npos && actorInfo.find("Collect") == std::string::npos && vars::espCollectable && actorInfo.find("Teleport") == std::string::npos && vars::espTeleport) {
-								// Other gameplay entities
-								color = { (int)(vars::colorCustoms[0] * 255), (int)(vars::colorCustoms[1] * 255), (int)(vars::colorCustoms[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						case 8: // Vision
-							if (vars::espCustoms) {
-								color = { (int)(vars::colorCustoms[0] * 255), (int)(vars::colorCustoms[1] * 255), (int)(vars::colorCustoms[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						case 9: // Animal
-							if (vars::espAnimal) {
-								color = { (int)(vars::colorAnimal[0] * 255), (int)(vars::colorAnimal[1] * 255), (int)(vars::colorAnimal[2] * 255), 255 };
-								draw = true;
-							}
-							break;
-						default:
-							//std::string actorInfo = std::string(Actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(Actor->KuroEntityType);
-							//fprintf(stderr, "Info: %s\n",actorInfo.c_str());
-							break;
-						}
+	//					switch (Actor->KuroEntityType) {
+	//					case 2: // NPC
+	//						if (vars::espNPC) {
+	//							color = { (int)(vars::colorNPC[0] * 255), (int)(vars::colorNPC[1] * 255), (int)(vars::colorNPC[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					case 4: // Monster
+	//						if (vars::espMonster) {
+	//							color = { (int)(vars::colorMonster[0] * 255), (int)(vars::colorMonster[1] * 255), (int)(vars::colorMonster[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					case 6: // SceneItem
+	//						if (vars::espSceneItem) {
+	//							color = { (int)(vars::colorSceneItem[0] * 255), (int)(vars::colorSceneItem[1] * 255), (int)(vars::colorSceneItem[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					case 7: // Customs
+	//						if (actorInfo.find("Treasure") != std::string::npos && vars::espChests) {
+	//							// This is a treasure, use a different color
+	//							color = { (int)(vars::colorChest[0] * 255), (int)(vars::colorChest[1] * 255), (int)(vars::colorChest[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						if (actorInfo.find("Teleport") != std::string::npos && vars::espTeleport) {
+	//							// Handle teleports
+	//							color = { (int)(vars::colorTeleport[0] * 255), (int)(vars::colorTeleport[1] * 255), (int)(vars::colorTeleport[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						if (actorInfo.find("Collect") != std::string::npos && vars::espCollectable) {
+	//							// Handle collectables
+	//							color = { (int)(vars::colorCollectable[0] * 255), (int)(vars::colorCollectable[1] * 255), (int)(vars::colorCollectable[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						if (vars::espOtherCustoms && actorInfo.find("Treasure") == std::string::npos && actorInfo.find("Collect") == std::string::npos && vars::espCollectable && actorInfo.find("Teleport") == std::string::npos && vars::espTeleport) {
+	//							// Other gameplay entities
+	//							color = { (int)(vars::colorCustoms[0] * 255), (int)(vars::colorCustoms[1] * 255), (int)(vars::colorCustoms[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					case 8: // Vision
+	//						if (vars::espCustoms) {
+	//							color = { (int)(vars::colorCustoms[0] * 255), (int)(vars::colorCustoms[1] * 255), (int)(vars::colorCustoms[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					case 9: // Animal
+	//						if (vars::espAnimal) {
+	//							color = { (int)(vars::colorAnimal[0] * 255), (int)(vars::colorAnimal[1] * 255), (int)(vars::colorAnimal[2] * 255), 255 };
+	//							draw = true;
+	//						}
+	//						break;
+	//					default:
+	//						//std::string actorInfo = std::string(Actor->BlueprintTypeName.GetRawString()) + " | " + std::to_string(Actor->KuroEntityType);
+	//						//fprintf(stderr, "Info: %s\n",actorInfo.c_str());
+	//						break;
+	//					}
 
-						if (draw && vars::espBox && !vars::espLine) {
-							ESP::DrawActor(Actor, ESP::DrawMode::Box, ESP::PointMode::Nulls, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
-						}
-						else if (draw && vars::espBox && vars::espLine)
-						{
-							ESP::DrawActor(Actor, ESP::DrawMode::Box, ESP::PointMode::Line, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
-						}
-						else if (draw && !vars::espBox && vars::espLine)
-						{
-							ESP::DrawActor(Actor, ESP::DrawMode::Chams, ESP::PointMode::Line, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
-						}
-					}
-				}
-			}
-		}
+	//					if (draw && vars::espBox && !vars::espLine) {
+	//						ESP::DrawActor(Actor, ESP::DrawMode::Box, ESP::PointMode::Nulls, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
+	//					}
+	//					else if (draw && vars::espBox && vars::espLine)
+	//					{
+	//						ESP::DrawActor(Actor, ESP::DrawMode::Box, ESP::PointMode::Line, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
+	//					}
+	//					else if (draw && !vars::espBox && vars::espLine)
+	//					{
+	//						ESP::DrawActor(Actor, ESP::DrawMode::Chams, ESP::PointMode::Line, color, (SDK::AActor*)sdk::World->OwningGameInstance->LocalPlayers[0]->PlayerController->AcknowledgedPawn);
+	//					}
+	//				}
+	//			}
+	//		}
+	//	}
 }
 
 
 float GetMapPos(float x, float y)
 {
-	auto line = SDK::UTraceLineElement::GetDefaultObj();
-	line->SetStartLocation(x, y, 10000);
-	line->SetEndLocation(x, y, -1000);
-	line->bIgnoreSelf = true;
-	line->bIsSingle = true;
-	line->bTraceComplex = true;
-	line->WorldContextObject = sdk::World;
-	
-	auto q = SDK::UKuroStaticLibrary::ConvertToTraceType(SDK::ECollisionChannel::ECC_WorldStatic);
-	line->SetTraceTypeQuery(q);
+	//auto line = SDK::UTraceLineElement::GetDefaultObj();
+	//line->SetStartLocation(x, y, 10000);
+	//line->SetEndLocation(x, y, -1000);
+	//line->bIgnoreSelf = true;
+	//line->bIsSingle = true;
+	//line->bTraceComplex = true;
+	//line->WorldContextObject = sdk::World;
+	//
+	//auto q = SDK::UKuroStaticLibrary::ConvertToTraceType(SDK::ECollisionChannel::ECC_WorldStatic);
+	//line->SetTraceTypeQuery(q);
 
-	if (SDK::UKuroTraceLibrary::LineTrace(line, Util::FString("TraceUtil")))
-		fprintf(stderr, "Hit\n");
-	for ( auto lin : line->HitResult->LocationZ_Array)
-	{
-		fprintf(stderr, "Z: %f \n", lin);
-	}
-	/*fprintf(stderr, "Z: %f \n", line->HitResult->LocationZ_Array[0]);
-	fprintf(stderr, "Impact point Z: %f \n", line->HitResult->ImpactPointZ_Array[0]);*/
-	//fprintf(stderr, "Impact point Z: %f \n", line->HitResult->imp);
+	//if (SDK::UKuroTraceLibrary::LineTrace(line, Util::FString("TraceUtil")))
+	//	fprintf(stderr, "Hit\n");
+	//for ( auto lin : line->HitResult->LocationZ_Array)
+	//{
+	//	fprintf(stderr, "Z: %f \n", lin);
+	//}
+	///*fprintf(stderr, "Z: %f \n", line->HitResult->LocationZ_Array[0]);
+	//fprintf(stderr, "Impact point Z: %f \n", line->HitResult->ImpactPointZ_Array[0]);*/
+	////fprintf(stderr, "Impact point Z: %f \n", line->HitResult->imp);
 }
 
 void TpNeariestActor()
 {
-	if (sdk::World) {
+	/*if (sdk::World) {
 		auto Actors = SDK::UWorld::GetWorld()->PersistentLevel->Actors;
 		
 		SDK::AActor* nearestActor = nullptr;
@@ -798,7 +797,7 @@ void TpNeariestActor()
 			nearestItemPos.Y += 75;
 			Teleport::TpPlayerPos(nearestItemPos);
 		}
-	}
+	}*/
 }
 
 

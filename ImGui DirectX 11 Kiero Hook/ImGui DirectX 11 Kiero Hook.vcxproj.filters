@@ -81,23 +81,8 @@
     <ClCompile Include="vec2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CppSDK\SDK\Basic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CppSDK\SDK\CoreUObject_functions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CppSDK\SDK\Engine_functions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CppSDK\SDK\Puerts_functions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Utils.cpp">
       <Filter>Source Files\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="CppSDK\SDK\WorldFunctionLibrary_functions.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NoClip.cpp">
       <Filter>Source Files\cheats</Filter>
@@ -108,10 +93,13 @@
     <ClCompile Include="ESP.cpp">
       <Filter>Source Files\cheats</Filter>
     </ClCompile>
-    <ClCompile Include="CppSDK\SDK\KuroData_functions.cpp">
+    <ClCompile Include="SDK\Engine_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CppSDK\SDK\KuroUtility_functions.cpp">
+    <ClCompile Include="SDK\CoreUObject_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Basic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -157,13 +157,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CppSDK\SDK\Basic.cpp" />
-    <ClCompile Include="CppSDK\SDK\CoreUObject_functions.cpp" />
-    <ClCompile Include="CppSDK\SDK\Engine_functions.cpp" />
-    <ClCompile Include="CppSDK\SDK\KuroData_functions.cpp" />
-    <ClCompile Include="CppSDK\SDK\KuroUtility_functions.cpp" />
-    <ClCompile Include="CppSDK\SDK\Puerts_functions.cpp" />
-    <ClCompile Include="CppSDK\SDK\WorldFunctionLibrary_functions.cpp" />
     <ClCompile Include="ESP.cpp" />
     <ClCompile Include="GodMode.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
@@ -182,6 +175,9 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="NoClip.cpp" />
+    <ClCompile Include="SDK\Basic.cpp" />
+    <ClCompile Include="SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\Engine_functions.cpp" />
     <ClCompile Include="Teleport.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="vec2.cpp" />
