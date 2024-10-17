@@ -1,0 +1,79 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (ImGui DirectX 11 Kiero Hook.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.h(2,9): warning C4005: 'WIN32_LEAN_AND_MEAN': macro redefinition
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\vec.h(226,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(288,7): warning C4099: 'SDK::FName': type name first seen using 'struct' now seen using 'class'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(855,2): warning C4369: 'SDK::EClassFlags::NewerVersionExists':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1132,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1154,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1155,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1167,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1178,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Basic.hpp(1202,9): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\CoreUObject_structs.hpp(558,31): warning C4244: 'return': conversion from 'double' to 'SDK::FVector::UnderlayingType', possible loss of data
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(1514,2): warning C4309: 'initializing': truncation of constant value
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(1514,2): warning C4369: 'SDK::EViewModeIndex::VMI_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(4702,2): warning C4309: 'initializing': truncation of constant value
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(4702,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(5239,2): warning C4309: 'initializing': truncation of constant value
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(5239,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(11715,20): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(11716,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(11717,27): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_structs.hpp(12669,20): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\PropertyAccess_structs.hpp(84,20): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\PropertyAccess_structs.hpp(148,20): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\PropertyAccess_structs.hpp(166,20): warning C4099: 'SDK::FArrayProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(6612,114): warning C4099: 'SDK::FField': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(8527,20): warning C4099: 'SDK::FProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10231,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10233,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10235,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10237,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10239,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10241,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\CppSDK\SDK\Engine_classes.hpp(10243,27): warning C4099: 'SDK::FStructProperty': type name first seen using 'class' now seen using 'struct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\Menu.h(750,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\Menu.h(765,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\Menu.h(780,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(7,1): error C3646: 'BOOL': unknown override specifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(7,6): error C2059: syntax error: '__cdecl'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(7,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(14,28): error C2065: 'MainThread': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(28,2): error C3861: 'init': identifier not found
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(44,51): error C2065: 'Dump': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(47,20): error C2143: syntax error: missing ';' before '*'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(47,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(47,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(48,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(48,25): error C2143: syntax error: missing ';' before '*'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(48,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(49,18): error C2143: syntax error: missing ';' before '*'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(49,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(49,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(50,43): error C2065: 'Il2CppGenericClass': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(50,63): error C2065: 'gclass': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(50,24): error C2513: 'Il2CppClass **': no variable declared before '='
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(64,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(64,1): error C2373: 'GetTypeInfoFromTypeDefinitionIndex': redefinition; different type modifiers
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(64,36): error C2146: syntax error: missing ';' before identifier 'GetTypeDefFromIndex'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(65,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(65,1): error C2373: 'GetMethods': redefinition; different type modifiers
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(65,12): error C2146: syntax error: missing ';' before identifier 'GetMethodsInfoFunct'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(66,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(66,1): error C2373: 'GetFields': redefinition; different type modifiers
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(66,11): error C2146: syntax error: missing ';' before identifier 'GetClassFieldsInfo'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(80,2): error C2065: 'GetTypeDefFromIndex': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(80,60): error C2146: syntax error: missing ';' before identifier 'GetTypeAddress'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(81,2): error C2065: 'GetMethodsInfoFunct': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(81,36): error C2146: syntax error: missing ';' before identifier 'GetMethodsInfoAddress'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(82,2): error C2065: 'GetClassFieldsInfo': undeclared identifier
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(82,34): error C2146: syntax error: missing ';' before identifier 'GetClassFieldAddress'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(92,29): error C3861: 'GetTypeDefFromIndex': identifier not found
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(190,13): error C2084: function 'std::string BuildClassMethodsString(void *)' already has a body
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(195,19): error C3861: 'GetMethodsInfoFunct': identifier not found
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(234,71): error C2061: syntax error: identifier 'Il2CppGenericClass'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(237,22): error C3861: 'GetClassFieldsInfo': identifier not found
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(272,16): error C2371: 'Il2CppClass': redefinition; different basic types
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(361,16): error C2371: 'MethodInfo': redefinition; different basic types
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui DirectX 11 Kiero Hook\main.cpp(366,16): error C2371: 'FieldInfo': redefinition; different basic types

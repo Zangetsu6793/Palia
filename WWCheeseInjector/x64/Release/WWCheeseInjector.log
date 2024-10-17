@@ -1,0 +1,6 @@
+﻿  WWCheeseInjector.cpp
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui-DirectX-11-Kiero-Hook-master\WWCheeseInjector\WWCheeseInjector.cpp(25,14): error C2664: 'HWND FindWindowA(LPCSTR,LPCSTR)': cannot convert argument 2 from 'const _Elem *' to 'LPCSTR'
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui-DirectX-11-Kiero-Hook-master\WWCheeseInjector\WWCheeseInjector.cpp(25,14): error C2664:         with
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui-DirectX-11-Kiero-Hook-master\WWCheeseInjector\WWCheeseInjector.cpp(25,14): error C2664:         [
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui-DirectX-11-Kiero-Hook-master\WWCheeseInjector\WWCheeseInjector.cpp(25,14): error C2664:             _Elem=wchar_t
+D:\Vs\Wuthering Waves\ImGui-DirectX-11-Kiero-Hook-master\ImGui-DirectX-11-Kiero-Hook-master\WWCheeseInjector\WWCheeseInjector.cpp(25,14): error C2664:         ]
